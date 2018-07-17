@@ -1,0 +1,2 @@
+TRUNCATE TABLE books;
+TRUNCATE TABLE books;

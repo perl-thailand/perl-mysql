@@ -1,0 +1,1 @@
+ALTER TABLE perl_thailand.tb_bill_sale_detail DROP INDEX bill_id;

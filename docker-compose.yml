@@ -1,0 +1,18 @@
+version: '3'
+services:
+  perl:
+    build: ./perl-dbi-image
+    volumes:
+      - ./pl:/pl
+    command: /bin/bash
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: perl_thailand
+      MYSQL_PASSWORD: perl_thailand
+      MYSQL_DATABASE: perl_thailand
+    ports:
+      - '3306:3306'
+    volumes:
+      - ./sql:/sql
