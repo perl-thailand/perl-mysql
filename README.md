@@ -26,4 +26,4 @@ docker-compose run --rm mysql bash -c "mysql -hmysql -uperl_thailand -pperl_thai
 
 docker-compose down
 
-docker image rm perl-mysql_perl mysql:5.7 perl:5.28
+docker image rm -f perl-mysql_perl mysql:5.7 perl:5.28
